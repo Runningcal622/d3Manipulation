@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <script src="https://d3js.org/d3.v5.js"></script>
+  </head>
+  <body>
+    <p>Hello</p>
+    <ol>
+    </ol>
+    <button class="button" type="button" name="button" onclick="makeList()">click to make list</button>
+    <script type="text/javascript">
+      var animals = ["Goat","sheep","Lemur","Sloth","Porcupine"];
+      var makeList = function(){
+        animals.forEach(function(e){
+          d3.select("body").append("li").text(e);
+        });
+
+      }
+
+    </script>
+  </body>
+</html>
